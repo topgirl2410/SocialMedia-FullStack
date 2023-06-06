@@ -18,9 +18,11 @@ import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
 
 function App() {
-  const {currentUser} = useContext(AuthContext);
+  const { currentUser } = useContext(AuthContext);
 
   const { darkMode } = useContext(DarkModeContext);
+
+
 
   const Layout = () => {
     return (
@@ -76,7 +78,11 @@ function App() {
 
   return (
     <div>
-      <RouterProvider router={router} />
+    
+
+        <RouterProvider router={router} />
+      
+
     </div>
   );
 }
